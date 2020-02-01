@@ -1,0 +1,114 @@
+{
+  "foodCategories": [
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "img": "https://theloopywhisk.com/wp-content/uploads/2018/03/Gluten-Free-Pizza_663px-featured-1-300x300.jpg"
+    },
+    {
+      "id": "pasta",
+      "name": "Pasta",
+      "img": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    }
+  ],
+  "foodItems": [
+    {
+      "id": "pizzaMargherita",
+      "name": "Pizza Margherita",
+      "img": "",
+      "description": "tomato sauce, cheese",
+      "category": "pizza",
+      "price": 5.1
+    },
+    {
+      "id": "pizzaProsciutto",
+      "name": "Pizza Prosciutto",
+      "img": "",
+      "description": "tomato sauce, cheese, ham",
+      "category": "pizza",
+      "price": 10
+    },
+    {
+      "id": "spaghettiBolognese",
+      "name": "Spaghetti Bolognese",
+      "img": "",
+      "description": "",
+      "category": "pasta",
+      "price": 9
+    },
+    {
+      "id": "spaghettiSeeFood",
+      "name": "Spaghetti Frutti di Mare",
+      "img": "",
+      "description": "with sea food",
+      "category": "pasta",
+      "price": 12
+    }
+  ],
+  "choicesTypes": [
+    { "id": "crust", "name": "Crust" },
+    { "id": "extraToppings", "name": "Extra Toppings" }
+  ],
+  "choicesItems": [
+    {
+      "id": "crustFluffy",
+      "choiceType": "crust",
+      "name": "Fluffy",
+      "img": "",
+      "price": 0
+    },
+    {
+      "id": "crustCrispy",
+      "choiceType": "crust",
+      "name": "Crispy",
+      "img": "",
+      "price": 0
+    },
+    {
+      "id": "extraCorn",
+      "choiceType": "extraToppings",
+      "name": "Corn",
+      "img": "",
+      "price": 0.7
+    },
+    {
+      "id": "extraMozzarella",
+      "choiceType": "extraToppings",
+      "name": "Extra mozzarella",
+      "img": "",
+      "price": 1.2
+    }
+  ],
+  "menuItems": {
+    "menuCategories": [
+      {
+        "type": "pizza",
+        "extras": ["crustFluffy"],
+        "items": [
+          {
+            "id": "pizzaMargherita",
+            "extras": ["extraCorn", "extraMozzarella"]
+          },
+          {
+            "id": "pizzaProsciutto",
+            "extras": []
+          }
+        ]
+      },
+      {
+        "type": "pasta",
+        "extras": ["extraMozzarella"],
+        "items": [
+          {
+            "id": "spaghettiBolognese",
+            "extras": []
+          },
+          {
+            "id": "spaghettiSeeFood",
+            "extras": []
+          }
+        ]
+      }
+    ]
+  }
+}

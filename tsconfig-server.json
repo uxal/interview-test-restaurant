@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "target": "es6",
+    "lib": ["es2017"],
+    "types": ["node"]
+  },
+  "include": ["server.ts"],
+  "exclude": ["node_modules", "build", "public"]
+}
